@@ -5,7 +5,7 @@
 }
 
 .home {
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.9197080291970803) 0%, rgba(0, 0, 0, 0.8218978102189781) 61%, rgba(0, 0, 0, 0.5226277372262773) 100%),
@@ -109,29 +109,201 @@ nav a {
     margin: 0 0 0 0.5rem;
 }
 
-
 .curved-border {
     margin-top: 4rem;
     z-index: 1;
     position: relative;
     background-color: red;
-    height: 5vh;
+    height: 5rem;
     border-radius: 50% 50% 0% 0% / 42% 38% 0% 0%;
     background: linear-gradient(100deg, rgba(23, 0, 0, 1) 0%, rgba(107, 1, 1, 1) 14%, rgba(255, 0, 0, 1) 50%, rgba(88, 1, 1, 1) 86%, rgba(23, 0, 0, 1) 100%);
+    bottom: -4.8rem;
 }
 
 .curved-border2 {
     z-index: 2;
     position: relative;
-    height: 10vh;
+    height: 10rem;
     border-radius: 50% 50% 0% 0% / 25% 25% 0% 0%;
     background: linear-gradient(180deg, rgba(0, 14, 97, 1) 0%, rgba(0, 0, 0, 1) 51%);
-    top: -4.2vh;
+
 
 }
 
 
 .section2 {
-    height: 100vh;
+    height: 100%;
     background-color: #000;
+    color: #fff;
+    padding: 3rem 5rem 0 5rem;
+}
+
+.section2-head {
+    font-size: 1.5rem;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(69, 23, 32, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* padding: 4rem 0 4rem 2rem; */
+    border-radius: 20px;
+    margin: 1rem 0 3rem 0;
+}
+
+.container1-text {
+    margin: 4rem 0 4rem 2rem;
+}
+
+.container1 span {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.container1-img {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(90deg, rgba(24, 0, 5, 1) 0%, rgba(0, 0, 0, 0.11668417366946782) 100%), url(./assets/background.png);
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+
+.sub-container2 {
+    margin: 0.4rem;
+    border-radius: 20px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #ffffffd6;
+}
+
+.container2-text {
+    height: 6rem;
+}
+
+.container2 span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+    color: #fff;
+}
+
+.container2-1 {
+    background: linear-gradient(90deg, rgba(25, 33, 69, 1) 49%, rgba(31, 19, 36, 1) 100%);
+}
+
+.container2-2 {
+    background: linear-gradient(90deg, rgba(27, 29, 59, 1) 49%, rgba(32, 19, 34, 1) 100%);
+}
+
+.container2-img {
+    display: flex;
+    width: fit-content;
+    float: right;
+}
+
+.faq-container {
+    background-color: #000;
+    color: #fff;
+    padding: 3.5rem 5rem 0 5rem;
+}
+
+.faq-head {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    font-size: 1.6rem;
+    width: 51.5rem;
+    height: 5rem;
+    padding: 0 1rem 0 1rem;
+    margin-top: 0.5rem;
+}
+
+.faq:hover {
+    background-color: #414141;
+}
+
+.faq a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.faq i {
+    font-size: 3rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 5rem;
+}
+
+footer a {
+    color: #ffffffbe;
+}
+
+.footer-form input {
+    height: 3.5rem;
+    width: 50rem;
+    background: none;
+    border: 1px solid #ffffff5e;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0 0 0 1rem;
+}
+
+.footer-form a {
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    padding: 1.1rem 1.3rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.footer-form i {
+    margin: 0 0 0 0.5rem;
+}
+
+.footer-links {
+    padding: 4rem 16rem 0 4rem;
+    margin: 3rem 0;
+}
+
+.links-list {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.dropdown-footer {
+    color: #fff;
+    border: 1px solid #545454;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    height: 1.2rem;
+    display: inline;
+    margin: 0 0 0 4rem;
+}
+
+.footer-text {
+    margin: 2rem 0 4rem 4rem;
+    font-size: 0.9rem;
+    color: #ffffffbe;
 }
